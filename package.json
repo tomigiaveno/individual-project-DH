@@ -1,0 +1,24 @@
+{
+  "name": "individual-project-dh",
+  "version": "1.0.0",
+  "description": "Proyecto individual fullstack Digital House",
+  "main": "app.js",
+  "scripts": {
+    "start":"node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomigiaveno/individual-project-DH.git"
+  },
+  "author": "Tomas Giaveno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomigiaveno/individual-project-DH/issues"
+  },
+  "homepage": "https://github.com/tomigiaveno/individual-project-DH#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}

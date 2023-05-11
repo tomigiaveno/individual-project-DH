@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <title>Mercado Liebre</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-first">
+      <img class="logo" src="./images/logo-mercado-liebre.svg" alt="logo de Mercado Liebre">
+      <div class="search">
+        <input class="input-search" type="search" placeholder="Buscar productos, marcas">
+        <i class="fa-solid fa-magnifying-glass fa-xs"></i>
+      </div>
+      <div class="subtitle-header">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        <p>Comprá en cuotas y sin tarjeta de crédito</p>
+      </div>
+    </div>
+    <div class="header-second">
+      <ul class="nav-bar">
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Tiendas Oficiales</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+      <ul class="login">
+        <div class="list-header">
+          <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-id-card "></i></a></li>   
+        </div>
+        <div class="list-header">
+          <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket "></i></a></li>
+        </div>
+        <div class="list-header">
+          <li><a href="#">Mis compras <i class="fa-sharp fa-solid fa-basket-shopping "></i></a></li>
+        </div>
+      </ul>
+    </div>
+    <button class="header-menu">
+      <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
+    </button>
+  </header>
+  <main>
+    <form action="/register" method="post">
+      <h3>Datos del usuario</h3>
+      <div class="personal-data-form">
+        <label for="name">Nombre y apellido</label>
+        <input type="text" name="name" id="name" placeholder="Nombre y apellido" required error oninvalid="this.setCustomValidity('Escribe tu nombre')">
+        <label for="user">Nombre de usuario</label>
+        <input type="text" name="name" id="user" placeholder="Nombre de usuario" required error oninvalid="this.setCustomValidity('Escribe un nombre de usuario')">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="E-mail" required error oninvalid="this.setCustomValidity('Escribe un email válido')">
+        <label for="birthdate">Fecha de nacimiento</label>
+        <input type="text" name="birthdate" id="birthdate" placeholder="MM/DD/YYYY"
+        onfocus="(this.type='date')" required error oninvalid="this.setCustomValidity('Escribe tu fecha de nacimiento')">
+        <label for="address">Dirección</label>
+        <input type="text" name="address" id="address" placeholder="Dirección" required error oninvalid="this.setCustomValidity('Escribe tu dirección')">
+      </div>
+      <h3>Perfil del usuario</h3>
+      <div class="data-form">
+        <input type="radio" name="seller" id="Comprador" value="Comprador" required oninvalid="this.setCustomValidity('Escoge una opción')">
+        <label for="seller">Comprador</label>
+        <input type="radio" name="buyer" id="Vendedor" value="Vendedor">
+        <label for="buyer">Vendedor</label>
+      </div>
+      <h3>Intereses</h3>
+      <div class="interest-data-form">
+        <input type="checkbox" id="peliculas" name="interest" value="peliculas" />
+        <label for="peliculas">Peliculas</label>
+        <input type="checkbox" id="vinilos" name="interest" value="vinilos" />
+        <label for="vinilos">Vinilos</label>
+        <input type="checkbox" id="piano" name="interest" value="piano" />
+        <label for="piano">Piano</label>
+        <input type="checkbox" id="guitarras" name="interest" value="guitarras" />
+        <label for="guitarras">Guitarras</label>
+        <input type="checkbox" id="cafe" name="interest" value="cafe" />
+        <label for="cafe">Café</label>
+      </div>
+     
+      <button class="register-button" type="submit">Enviar</button>
+      <button class="register-button reset" type="reset">Limpiar</button>
+      <button class="register-button back" type="button" onclick="location.href= '/';" >Volver</button>
+      
+    </form>
+  </main>
+  <footer>
+    <div class="information-footer">
+    <article class="footer-information">
+      <i class="fa-solid fa-credit-card fa-2xl blue-icon"></i>
+      <h5 class="footer-title">
+        ● Pagá con tarjeta o en efectivo
+      </h5>
+      <p class="texts">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+        puntos de pago. ¡Y siempre es seguro!
+      </p>
+    </article>
+    <article class="footer-information">
+      <i class="fa-solid fa-gift fa-2xl blue-icon"></i>
+      <h5 class="footer-title">
+        ● Envío gratis desde $ 2.500
+      </h5>
+      <p class="texts">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+        productos. Es un beneficio de Mercado Puntos.
+      </p>
+    </article>
+    <article class="footer-information">
+      <i class="fa-solid fa-user-shield fa-2xl blue-icon"></i>
+      <h5 class="footer-title">
+        ● Seguridad, de principio a fin
+      </h5>
+      <p class="texts">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+        porque estás siempre protegid@.
+      </p>
+    </article>
+  </div>
+    <article>
+      <p class="copyright">
+        ● Copyright © 1999-2020 MercadoLiebre S.R.L.
+      </p>
+    </article>
+  </footer>
+
+</body>
+
+</html>

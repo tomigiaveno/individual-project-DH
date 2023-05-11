@@ -1,0 +1,412 @@
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; 
+Navegación en tablets (ancho mínimo 361 px)
+● Navegación en desktop (ancho mínimo 769 px)*/
+
+
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #ebebeb;
+  
+  }
+  
+  header {
+    background-color: #EAC926;
+    padding: 20px;
+    padding-bottom: 15px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #a8b5c9;
+    color: #1259c3
+  }
+  
+  .header-first {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 14px;
+    background-color: #EAC926
+  }
+  
+  .header-second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    margin-bottom: 12px;
+    width: 70%;
+  }
+  
+  .search {
+    display: flex;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-right: -25px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .input-search {
+    width: 70%;
+    padding: 4px;
+    height: 20px
+  }
+  
+  .fa-magnifying-glass {
+    position: relative;
+    left: -20px;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #1259c3
+  }
+  
+  .login {
+    display: none;
+  }
+  
+  .nav-bar {
+    display: none;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb;
+    margin: auto;
+    width: 65%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .product:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition-duration: 0.3s;
+  }
+  
+  .image {
+    width: 85%;
+    margin-top: 20px;
+  }
+  
+  
+  .article-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    background-color: white;
+    width: 85%;
+    margin: 5px 0 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  
+  .titles {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .precio {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .discount {
+    color: #39b54a;
+  }
+  
+  .desc-descrip {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .product >.article-texts >.descrip {
+    display: none;
+  }
+  
+  .product:hover > .article-texts >.descrip {
+    display: block;
+    transition-duration: 0.3s;
+  }
+  
+  .texts {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .list-header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .subtitle-header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    gap: 4px;
+    justify-content: center;
+  }
+  
+  .header-menu {
+    background-color: #1259c3;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    margin-inline: auto;
+    padding: 20px;
+    text-align: center;
+    width: max-content;
+    height: max-content;
+  }
+  
+  .footer-information {
+    text-align: center;
+    width: 65%;
+  }
+  
+  .blue-icon {
+    color: #1259c3;
+  
+  }
+  
+  .header-button {
+    background-color: transparent;
+    border: none;
+  }
+  
+  footer {
+    padding: 40px 60px;
+  }
+  
+  .information-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fa-truck {
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    padding: 23px 10px;
+    margin-top: -25px;
+    align-self: end;
+    margin-right: 40px;
+  }
+  
+  .fa-truck:hover {
+    transform: rotate(-90deg);
+    transition: 900ms;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .data-form {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  
+  .interest-data-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  
+  }
+  
+  .personal-data-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  input {
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+  }
+  
+  .register-button {
+    margin-top: 20px;
+    height: 30px;
+    width: 38%;
+    background-color: #1259c3;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .reset {
+    background-color: red;
+    margin-top: 0;
+  }
+  
+  .reset:hover {
+    background-color: white;
+    color: red;
+  
+  }
+  
+  .login-button:hover {
+    background-color: #0022AA;
+    color: white;
+  }
+  
+  .back {
+    background-color: #EAC926;
+    color: black;
+    margin-top: 0;
+  }
+  
+  .back:hover {
+    background-color: dimgrey;
+    color: black;
+  }
+  
+  .footer-title {
+    margin-bottom: -5px;
+  }
+  
+  .copyright {
+    font-size: 10px;
+  }
+  
+  @media (min-width: 361px) {
+    .logo {
+      margin-bottom: 10px;
+      width: 45%;
+    }
+  
+    .subtitle-header {
+      font-size: 16px;
+    }
+  
+    .interest-data-form {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+  
+    .section-products {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 10px;
+      padding: 0 20px;
+    }
+  
+    .section-products>* {
+      flex: 40%
+    }
+  
+    .logo {
+      width: 29%;
+    }
+  
+    .search {
+      width: 24%;
+    }
+  
+    input-search {
+      width: 100%;
+      height: 36px
+    }
+  
+    header-menu {
+      display: none;
+    }
+  
+    .login {
+      display: flex;
+      justify-content: space-evenly;
+      width: 40%;
+    }
+  
+    nav-bar {
+      display: flex;
+      justify-content: space-evenly;
+      width: 40%;
+      padding-left: 0;
+    }
+  }
+  
+  @media (min-width: 768px) {
+  
+  
+    section-products {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  
+    information-footer {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    login-form {
+      margin: 80px;
+      padding: 80px 0 200px;
+    }
+  
+    register-button {
+      width: 12%;
+    }
+  }
